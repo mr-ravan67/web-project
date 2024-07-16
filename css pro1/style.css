@@ -1,0 +1,184 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: "gilroy";
+    box-sizing: border-box;
+ }
+
+ html,body{
+    width: 100%;
+    height:100%;
+ }
+
+ #main{
+     width: 100%;
+     min-height: 100vh;
+ }
+
+ #top{
+    width: 100%;
+    min-height:60vh;
+    background-image: url(https://plus.unsplash.com/premium_photo-1673283381255-3b75088e3963?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnRhaW4lMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww);
+    background-size: cover;
+    background-position:50% 60% ;
+ }
+
+ #overlay{
+    position: relative;
+    width: 100%;
+    min-height:inherit;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+ #text{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 60%;
+    width: 100%;
+    padding: 0 10vw;
+    color: white;
+    
+ }
+
+ #textright{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ #textright p{
+  font-size: 12px;
+  width: 40%;
+ }
+
+ #texth1{
+    font-weight: 500;
+    font-size: 5vw;
+ }
+
+ #bottom{
+    display: flex;
+    width: 100%;
+    min-height:40vh;
+    background-color: rgb(40, 216, 243);
+ }
+
+ #bone{
+    padding: 30px;
+    width:25%;
+    min-height:inherit;
+    background-color: rgb(237, 240, 243);
+ }
+ #bone P{
+    font-size: 12px;
+    margin-top: 20px;
+ }
+
+ #btwo{
+    width: 25%;
+    height: 100%;
+    background-image: url(https://media.istockphoto.com/id/533708680/photo/hiker.jpg?s=612x612&w=0&k=20&c=uviw6DKTjxl2gtKqL7OQ1i994wDHPrFdZvWi0NonFvI=);
+    background-position:center ;
+    background-size: cover;
+}
+ #bthree{
+    width: 25%;
+    height: 100%;
+    background-color: chartreuse;
+ }
+ #bthreetop{
+    width: 100%;
+    min-height:20vh;
+    background-color: rgb(251, 88, 12);
+    color: white;
+    padding:20px ;
+ }
+
+ #bthreetop P{
+    margin-top:10px;
+    font-size: 10px;
+ }
+ #bthreebottom{
+    width: 100%;
+    min-height:20vh;
+    background-image: url(https://media.istockphoto.com/id/1194399971/photo/orange-flower-and-leaf-close-up-isolated-on-black-background.jpg?s=1024x1024&w=is&k=20&c=79LxNOGuH-ULd1bqxlQb_uEL--bDipzRzniMMo4a23c=);
+    background-position: center;
+    background-size: cover;
+}
+ #bfour{
+    width: 25%;
+    min-height:inherit;
+    background-color: #444;
+    color:#fff ;
+    padding: 30px;
+ }
+
+ .notf{
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-between ;
+ }
+ .notf #photo{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: red;
+ }
+
+ .notf P{
+    width: 86%;
+    font-size: 12px;
+ }
+
+@media(max-width:500px){
+   #overlay #text{
+      flex-direction: column;
+      align-items: flex-start;
+   }
+   #text h1{
+      font-size: 10vw;
+   }
+   #bottom{
+      min-height: 20vh;
+   }
+
+
+   #overlay #text #textright{
+      align-items: flex-start;
+      flex-direction:column;
+   }
+   #overlay #text #textright p{
+      width: initial;
+      margin-top: 20px;
+   }
+   #overlay #text #textright #icon{
+      margin-top: 30px;
+   }
+   #bottom{
+      flex-direction: column;
+   }
+   #bone{
+      width: 100%;
+
+   }
+   #btwo{
+      width: 100%;
+      min-height:40vh;
+
+   }
+   #bthree{
+      flex-direction: column;
+      width: 100%;
+
+   }
+   #bthreebottom{
+      min-height:40vh;
+
+   }
+   #bfour{
+      width: 100%;
+   }
+}

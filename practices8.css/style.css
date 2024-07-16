@@ -1,0 +1,18 @@
+.loader{
+    height: 100px;
+    width: 100px;
+    /*background-color: cornflowerblue;*/
+    border-radius: 50%;
+    border:  #d9ef0b 10px solid;
+    border-top:  #4ecdc4 10px solid;
+    animation: spainAnimate 1s ease-in-out infinite normal;
+          
+}
+@keyframes spainAnimate{
+    from{
+        transform:rotate(0deg);
+        }
+        to{
+            transform:rotate(360deg);
+        }
+}

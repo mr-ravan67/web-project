@@ -1,0 +1,14 @@
+#box {
+    color:rgb(64, 212, 86);
+    background-color: rgb(157, 57, 122);
+}
+/*.heading{
+    color:rebeccapurple
+}*/
+h1,h2,h3{
+    color:rgb(177, 60, 24);
+}
+button{
+    color:rgb(26, 183, 26);
+    background-color: aqua;
+}

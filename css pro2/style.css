@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+#left{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background-color:white;
+}
+#lnav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+#lnavr{
+    display: flex;
+    text-align: center;
+
+}
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size:14px ;
+}
+
+#lnavr i{
+    color: royalblue;
+}
+#left #textcenter{
+    position: absolute;
+    top: 50%;
+    left:50% ;
+    transform: translate(-50%,-50%);
+
+}
+
+#texcenter h1{
+    font-size: 100px;
+    font-weight: 900;
+
+}
+
+#textcenter p{
+    opacity: .8;
+    font-size: 12px;
+    line-height: 20px ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#textcenter a{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity:.6 ;
+}
+
+
+#right{
+    width: 60%;
+    height: 100%;
+    background-color:pink;
+}
+
+#rtop{
+   display: flex;
+    width:100% ;
+    height:50% ;
+    background-color: red;
+   
+   
+}
+#rtopleft{
+    width: 55%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2FjdHVzJTIwd2l0aCUyMG9yYW5nZSUyMHBvdHN8ZW58MHx8MHx8fDA%3D);
+   
+}
+
+#rtopright{
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    width:50% ;
+    height:100%;
+    background-image: url(https://images.unsplash.com/photo-1580052614034-c55d20bfee3b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8b3JhbmdlcyUyMGhhbGZ8ZW58MHx8MHx8fDA%3D);
+   
+   
+}
+#rbottom{
+    background-position: center;
+    background-size: cover;
+    width:100% ;
+    height:50% ;
+    background-image: url(https://media.istockphoto.com/id/1150309585/photo/closeup-view-of-potted-green-natural-plant-on-windowsill.jpg?s=612x612&w=0&k=20&c=XjAtrgYxQc3z9HKIgzonJZ2K_fN0USx3eT1rUlI6jAo=);
+}
+
+@media(max-width: 500px){
+     #main{
+        flex-direction: column;
+     }
+
+     #main #left{
+        width: 100%;
+     }
+     #main #right{
+        width: 100%;
+     }
+}
